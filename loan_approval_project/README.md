@@ -19,8 +19,9 @@ A machine learning web app that predicts whether a loan application will be appr
 - Deployed online with Render  
  
 ## 👩‍💻 Author
-   Shruti Kurhade
+    Shruti Kurhade
    - Data Science Enthusiast | 💻 ML Learner
+
 
 
 
