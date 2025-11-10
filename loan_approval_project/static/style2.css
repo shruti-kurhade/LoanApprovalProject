@@ -1,0 +1,89 @@
+body {
+  font-family: 'Poppins','Segoe UI Emoji','Noto Color Emoji',sans-serif;
+  background: linear-gradient(135deg, #00203f, #adefd1);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #adefd1;
+}
+
+.form-grid {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+button {
+  background-color: #adefd1;
+  color: #00203f;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #00203f;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px;
+  display: inline-block;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result .symbol {
+  font-size: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.approved {
+  background-color: #e5ffea;
+  color: #006600;
+  border: 2px solid #33cc33;
+}
+
+.rejected {
+  background-color: #ffe5e5;
+  color: #b30000;
+  border: 2px solid #ff4d4d;
+}
