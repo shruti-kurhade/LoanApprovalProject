@@ -20,6 +20,7 @@ A machine learning web app that predicts whether a loan application will be appr
  
 ## 👩‍💻 Author
    Shruti Kurhade
-   Data Science Enthusiast | 💻 ML Learner
+   - Data Science Enthusiast | 💻 ML Learner
+
 
 
