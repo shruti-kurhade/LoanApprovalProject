@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Loan Approval Prediction</h1>
+
+      <form action="/predict" method="post" class="form-grid">
+        <label>&#128101;Gender (0=Female,1=Male)</label>
+        <input type="text" name="Gender" value="{{Gender}}" required>
+
+        <label>&#128141;Married (0=No,1=Yes)</label>
+        <input type="text" name="Married" value="{{Married}}" required>
+
+        <label>&#128106;Dependents</label>
+        <input type="text" name="Dependents" value="{{Dependents}}" required>
+
+        <label>&#127891;Education (0=Not Graduate,1=Graduate)</label>
+        <input type="text" name="Education" value="{{Education}}" required>
+
+        <label>&#128188;Self Employed (0=No,1=Yes)</label>
+        <input type="text" name="Self_Employed" value="{{Self_Employed}}" required>
+
+        <label>&#128176;Applicant Income</label>
+        <input type="text" name="ApplicantIncome" value="{{ApplicantIncome}}" required>
+
+        <label>&#129309;Coapplicant Income</label>
+        <input type="text" name="CoapplicantIncome" value="{{CoapplicantIncome}}" required>
+
+        <label>&#128181;Loan Amount (in ₹ thousands)</label>
+        <input type="text" name="LoanAmount" value="{{LoanAmount}}" required>
+
+        <label>&#128197;Loan Term (Loan duration in months)</label>
+        <input type="text" name="Loan_Amount_Term" value="{{Loan_Amount_Term}}" required>
+
+        <label>&#128179;Credit History (1=Good credit,0=Bad credit)</label>
+        <input type="text" name="Credit_History" value="{{Credit_History}}" required>
+
+        <label>&#127968;Property Area (0=Rural,1=Semiurban,2=Urban)</label>
+        <input type="text" name="Property_Area" value="{{Property_Area}}" required>
+
+        <button type="submit">&#128269; Predict</button>
+      </form>
+
+      {% if result %}
+      <div class="result 
+        {% if 'Approved' in result %} approved 
+        {% elif 'Rejected' in result %} rejected 
+        {% endif %}">
+        {% if 'Approved' in result %}
+          <span class="symbol">&#9989;</span> {{ result }}
+        {% elif 'Rejected' in result %}
+          <span class="symbol">&#10060;</span> {{ result }}
+        {% else %}
+          <span class="symbol">&#8505;</span> {{ result }}
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
