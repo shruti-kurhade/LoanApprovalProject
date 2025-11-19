@@ -2,7 +2,7 @@
 A machine learning web app that predicts whether a loan application will be approved or rejected based on applicant details such as income, loan amount, credit history, and more.
 
 ## 🚀 Live Demo  
-🔗 
+🔗 https://loanapprovalproject-final.onrender.com
 
 ## 🧠 Tech Stack  
 -  *Python*  
@@ -21,6 +21,7 @@ A machine learning web app that predicts whether a loan application will be appr
 ## 👩‍💻 Author
 Shruti Kurhade
 - Data Science Enthusiast | 💻 ML Learner
+
 
 
 
